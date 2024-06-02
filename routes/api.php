@@ -20,4 +20,6 @@ use Illuminate\Support\Facades\Route;
 // });
 
 
-Route::post('/create-post', [PostController::class, 'CreatePost']);
+Route::post('create-post', [PostController::class,'CreatePost']);
+Route::post('edit-post/{id}', [PostController::class,'UpdatePost']);
+Route::delete('delete-post/{id}', [PostController::class,'DeletePost']);
